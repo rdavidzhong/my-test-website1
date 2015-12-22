@@ -1,3 +1,3 @@
 # New Website
 
-New Website Using Nodejs, Express, EJS, Boostrap
+Using Nodejs, Express, EJS, Boostrap
