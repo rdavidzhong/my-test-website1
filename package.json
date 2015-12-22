@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/rdavidzhong/my-test-website1#readme",
   "dependencies": {
+    "ejs": "^2.3.4",
     "express": "^4.13.3",
     "gulp": "^3.9.0"
   }
