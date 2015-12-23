@@ -6,15 +6,22 @@
 
 <div class="container">
 
-    <h1><%= title %></h1>
-    <p>Istuary Innovation Group is pioneering a true engine of innovation to transform ideas into robust tech startups that can scale globally. Istuary spurs startup success by integrating technological research, venture capital and business consulting into a unified platform.
-
-        As Canada’s largest technology incubation platform, Istuary provides business and marketing support to commercialize promising innovation. Istuary’s expanding network in North America and Asia gives entrepreneurs access to international talent, innovation, research and global market reach.
-
-        Istuary’s principles are partnership, innovation and globalization. The company name Istuary suggests both innovation and the fluid movement of an estuary – the meeting point where streams and rivers flow into the sea. Istuary provides the same fluidity. Istuary engages deeply with the startup community to foster disruptive ideas and timely support to bring new discoveries to market.
+    <h1><%= pagetitle %><%= title %></h1>
+    <p>
+        lili~ principles are partnership, innovation and globalization. The company name Istuary suggests both innovation and the fluid movement of an estuary – the meeting point where streams and rivers flow into the sea. Istuary provides the same fluidity. Istuary engages deeply with the startup community to foster disruptive ideas and timely support to bring new discoveries to market.
 
         Fittingly, Istuary is headquartered in Vancouver – an international city with a large pool of talented tech innovators and venture capitalists. Istuary’s other North American locations include Toronto and Los Angeles. In China, Istuary is located in Beijing, Guangzhou, Hangzhou, Nanjing, Ningbo, Shanghai and Shenzen.
     </p>
+
+    <!--Showing array-->
+    <% if (typeof(users) != 'undefined') { %>
+    <ul>
+        <% for(var i = 0; i < users.length; i++) { %>
+        <li><%=  users[i] %></li>
+        <% } %>
+    </ul>
+    <% } %>
+
 </div><!-- container -->
 
   <% include partials/page/footer.ejs %>

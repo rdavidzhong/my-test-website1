@@ -1,26 +1,14 @@
 var express = require('express');
 var app = express();
-
+var routes = require('./routes')
 
 app.set('view engine','ejs');
 
+app.locals.pagetitle = "Awesome Web ";
 
-app.get('/', function(req, res) {
-    res.render('default', {
-        title:'Home',
-        classname:'home',
-        users:['Ray', 'Morten', 'James']
-    });
-} );
-
-
-app.get('/about', function(req, res) {
-    res.render('default', {
-        title:'About Us',
-        classname:'about'
-    });
-} );
-
+// Routes
+app.get('/', routes.index);
+app.get('/about', routes.about);
 
 // Irrelevant web pages
 app.get('*', function(req, res) {
